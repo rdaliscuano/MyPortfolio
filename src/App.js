@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import './App.css';
-import {Switch, Route} from 'react-router-dom';
+import { HashRouter,Switch, Route} from 'react-router-dom';
 import Projects from './Components/Projects';
 import Home from './Components/Home';
 import mypic from './Components/Images/CV.png';
@@ -27,7 +27,7 @@ class App extends Component {
                 
           </a>
         </div>
-      
+        <HashRouter>
         <Switch >
   
   <Route  exact path="/"  component={Home}/>  
@@ -35,7 +35,7 @@ class App extends Component {
   
   
   </Switch>
-       
+       </HashRouter>
       
 
 
