@@ -43,7 +43,7 @@ class App extends Component {
          
         
         </div>
-        <BrowserRouter>
+        <BrowserRouter basename="/">
         <Switch >
           <Route  path="/"  component={Home}/>  
           <Route  path="/Projects" component={Projects} />
