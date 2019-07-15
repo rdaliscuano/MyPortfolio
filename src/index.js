@@ -7,8 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import {HashRouter, Route} from 'react-router-dom';
 
 ReactDOM.render(
-<HashRouter>
-<Route path="/" component={App} />
+<HashRouter basename="/">
+<Route  component={App} />
 </HashRouter>, document.getElementById('root')
 );
 
