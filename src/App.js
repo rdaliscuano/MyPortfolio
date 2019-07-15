@@ -9,7 +9,7 @@ import { slide as Menu } from 'react-burger-menu'
 class App extends Component {
   render() {
     return (
-  <div className='App'>  <HashRouter>
+  <div className='App'>  
   <Menu right> 
   <div className='nav-head'><i className="fab fa-codepen"></i>My Portfolio</div>
     <a id="home" className="menu-item" href="/">Home</a>
@@ -23,11 +23,11 @@ class App extends Component {
     
   
     </Menu>  
-    </HashRouter>
+  
     <div className='ui-container'>
       
         <div className='header-content'>
-        <HashRouter>
+       
           <a href='/' className=''>
             
             <h2 className='ui-header '>
@@ -40,8 +40,8 @@ class App extends Component {
                 </h2>
                 
           </a>
-          <Route exact path="/" component={Home} />
-         </HashRouter>
+         
+        
         </div>
         <BrowserRouter>
         <Switch >
