@@ -21,39 +21,24 @@ class App extends Component {
       <a href='https://www.facebook.com/robert.aliscuano' target = "_blank"><i className="fab fa-facebook-square"></i></a>
       <a href='https://github.com/rdaliscuano' target = "_blank"><i className="fab fa-github"></i></a>
     </div>
-    
-    <BrowserRouter basename="/">
+    </Menu>  
+  
+    <div className='ui-container'>
+      <div className='header-content'>
+          <a href='/MyPortfolio/' className=''>
+            <h2 className='ui-header '>
+              <img className='owner-img cursor-pointer' alt='MYPIC' src={mypic} ></img>
+              <div className='owner cursor-pointer' > Robert Daniel Aliscuano
+              <div className='owner-job cursor-pointer'>Web Developer</div>
+                </div></h2></a>
+          </div>
+        <BrowserRouter basename="/">
         <Switch >
           <Route  path="/"  component={Home}/>  
           <Route  path="/Projects" component={Projects} />
         </Switch>
         </BrowserRouter>
-    </Menu>  
-  
-    <div className='ui-container'>
-      
-        <div className='header-content'>
-       
-          <a href='/MyPortfolio/' className=''>
-            
-            <h2 className='ui-header '>
-             
-              <img className='owner-img cursor-pointer' alt='MYPIC' src={mypic} ></img>
-              <div className='owner cursor-pointer' > Robert Daniel Aliscuano
-              <div className='owner-job cursor-pointer'>Web Developer</div>
-                </div>
-                
-                </h2>
-                
-          </a>
-         
-        
         </div>
-        
-      
-
-
-    </div>
 </div>
 );
 }
