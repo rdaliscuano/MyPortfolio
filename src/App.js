@@ -22,7 +22,12 @@ class App extends Component {
       <a href='https://github.com/rdaliscuano' target = "_blank"><i className="fab fa-github"></i></a>
     </div>
     
-  
+    <BrowserRouter basename="/">
+        <Switch >
+          <Route  path="/"  component={Home}/>  
+          <Route  path="/Projects" component={Projects} />
+        </Switch>
+        </BrowserRouter>
     </Menu>  
   
     <div className='ui-container'>
@@ -44,12 +49,7 @@ class App extends Component {
          
         
         </div>
-        <BrowserRouter basename="/">
-        <Switch >
-          <Route  path="/"  component={Home}/>  
-          <Route  path="/Projects" component={Projects} />
-        </Switch>
-        </BrowserRouter>
+        
       
 
 
