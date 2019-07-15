@@ -11,16 +11,16 @@ class App extends Component {
   render() {
     return (
   <div className='App'>  
-  <Menu right> <BrowserRouter basename="/MyPortfolio">
+  <Menu right> 
   <div className='nav-head'><i className="fab fa-codepen"></i>My Portfolio</div>
-    <a id="home" className="menu-item" href="/">Home</a>
-    <Link to="/Projects" id="Projects" className="menu-item" >Projects</Link>
+    <a id="home" className="menu-item" href="/MyPortfolio/">Home</a>
+    <a id="Projects" className="menu-item" to="/MyPortfolio/Projects">Projects</a>
     <a  id="Resume" className="menu-item"  href="/MyPortfolio/static/MYresume.pdf" target = "_blank">Resume</a>
     <div className='contact'>
       <a href='https://www.linkedin.com/in/roldan-aliscuano-592910180/' target = "_blank"><i className="fab fa-linkedin"></i></a>
       <a href='https://www.facebook.com/robert.aliscuano' target = "_blank"><i className="fab fa-facebook-square"></i></a>
       <a href='https://github.com/rdaliscuano' target = "_blank"><i className="fab fa-github"></i></a>
-    </div></BrowserRouter></Menu>  
+    </div></Menu>  
   
     <div className='ui-container'>
       <div className='header-content'>
@@ -34,7 +34,7 @@ class App extends Component {
         <BrowserRouter basename="/MyPortfolio">
         <Switch >
           <Route  path="/"  component={Home}/>  
-          <Route  path="/Projects" component={Projects} />
+          <Route  path="/MyPortfolio/Projects" component={Projects} />
         </Switch>
         </BrowserRouter>
         </div>
