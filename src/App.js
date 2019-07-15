@@ -31,10 +31,10 @@ class App extends Component {
               <div className='owner-job cursor-pointer'>Web Developer</div>
                 </div></h2></a>
           </div>
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/MyPortfolio">
         <Switch >
           <Route  path="/"  component={Home}/>  
-          <Route  path="/MyPortfolio/Projects" component={Projects} />
+          <Route  path="/Projects" component={Projects} />
         </Switch>
         </BrowserRouter>
         </div>
