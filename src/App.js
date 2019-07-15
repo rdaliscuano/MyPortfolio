@@ -28,7 +28,7 @@ class App extends Component {
       
         <div className='header-content'>
        
-          <a href='/' className=''>
+          <a href='/MyPortfolio/' className=''>
             
             <h2 className='ui-header '>
              
