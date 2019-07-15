@@ -30,8 +30,8 @@ class App extends Component {
         <HashRouter>
         <Switch >
   
-  <Route  exact path="/"  component={Home}/>  
-  <Route  path="/Projects" component={Projects} />
+  <Route  exact path="rdaliscuano.github.io/MyPortfolio"  component={Home}/>  
+  <Route  path="rdaliscuano.github.io/MyPortfolio/Projects" component={Projects} />
   
   
   </Switch>
