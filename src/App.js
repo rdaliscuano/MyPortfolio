@@ -27,6 +27,7 @@ class App extends Component {
     <div className='ui-container'>
       
         <div className='header-content'>
+        <HashRouter>
           <a href='/' className=''>
             
             <h2 className='ui-header '>
@@ -39,6 +40,8 @@ class App extends Component {
                 </h2>
                 
           </a>
+          <Route exact path="/" component={Home} />
+         </HashRouter>
         </div>
         <HashRouter>
         <Switch >
