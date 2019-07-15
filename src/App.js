@@ -4,12 +4,25 @@ import { HashRouter, Switch, Route} from 'react-router-dom';
 import Projects from './Components/Projects';
 import Home from './Components/Home';
 import mypic from './Components/Images/CV.png';
-import Navbar from './Components/Navbar';
+import { slide as Menu } from 'react-burger-menu'
 
 class App extends Component {
   render() {
     return (
-  <div className='App'> <Navbar/>
+  <div className='App'> 
+  <Menu right> 
+  <div className='nav-head'><i className="fab fa-codepen"></i>My Portfolio</div>
+    <a id="home" className="menu-item" href="/">Home</a>
+    <a id="Projects" className="menu-item" href="/Projects">Projects</a>
+    <a  id="Resume" className="menu-item"  href='/MYresume.pdf' target = "_blank">Resume</a>
+    <div className='contact'>
+      <a href='https://www.linkedin.com/in/roldan-aliscuano-592910180/' target = "_blank"><i className="fab fa-linkedin"></i></a>
+      <a href='https://www.facebook.com/robert.aliscuano' target = "_blank"><i className="fab fa-facebook-square"></i></a>
+      <a href='https://github.com/rdaliscuano' target = "_blank"><i className="fab fa-github"></i></a>
+    </div>
+    
+  
+    </Menu>  
   
     <div className='ui-container'>
       
