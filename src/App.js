@@ -13,8 +13,8 @@ class App extends Component {
   <div className='App'>  
   <Menu right> 
   <div className='nav-head'><i className="fab fa-codepen"></i>My Portfolio</div>
-    <a id="home" className="menu-item" href="/MyPortfolio/">Home</a>
-    <Link id="Projects" className="menu-item" to="/Projects">Projects</Link>
+    <a id="home" className="menu-item" href="/">Home</a>
+    <Link to="/Projects" id="Projects" className="menu-item" >Projects</Link>
     <a  id="Resume" className="menu-item"  href="/MyPortfolio/static/MYresume.pdf" target = "_blank">Resume</a>
     <div className='contact'>
       <a href='https://www.linkedin.com/in/roldan-aliscuano-592910180/' target = "_blank"><i className="fab fa-linkedin"></i></a>
