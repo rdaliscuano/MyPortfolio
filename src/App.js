@@ -1,6 +1,7 @@
 import React , { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link} from 'react-router-dom';
+
 import Projects from './Components/Projects';
 import Home from './Components/Home';
 import mypic from './Components/Images/CV.png';
@@ -13,7 +14,7 @@ class App extends Component {
   <Menu right> 
   <div className='nav-head'><i className="fab fa-codepen"></i>My Portfolio</div>
     <a id="home" className="menu-item" href="/MyPortfolio/">Home</a>
-    <a id="Projects" className="menu-item" href="/MyPortfolio/Projects">Projects</a>
+    <Link id="Projects" className="menu-item" to="/Projects">Projects</Link>
     <a  id="Resume" className="menu-item"  href="/static/MYresume.pdf" target = "_blank">Resume</a>
     <div className='contact'>
       <a href='https://www.linkedin.com/in/roldan-aliscuano-592910180/' target = "_blank"><i className="fab fa-linkedin"></i></a>
