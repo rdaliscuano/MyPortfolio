@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import './App.css';
-import { HashRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import Projects from './Components/Projects';
 import Home from './Components/Home';
 import mypic from './Components/Images/CV.png';
@@ -43,12 +43,12 @@ class App extends Component {
           <Route exact path="/" component={Home} />
          </HashRouter>
         </div>
-        <HashRouter>
+        <BrowserRouter>
         <Switch >
           <Route  path="/"  component={Home}/>  
           <Route  path="/Projects" component={Projects} />
         </Switch>
-        </HashRouter>
+        </BrowserRouter>
       
 
 
