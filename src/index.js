@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {HashRouter as router} from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 
 
 
 
 ReactDOM.render(
-<Routes >
+<Router >
     <App/>
-</Routes>
+</Router>
 ,document.getElementById('root'));
 
 
