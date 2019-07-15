@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 ReactDOM.render(
-<BrowserRouter basename="/">
+<BrowserRouter basename="/MyPorfolio">
 <Route  component={App} />
 </BrowserRouter>, document.getElementById('root')
 );
