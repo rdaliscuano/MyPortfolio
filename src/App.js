@@ -29,8 +29,8 @@ class App extends Component {
         </div>
         <HashRouter>
         <Switch >
-          <Route  exact path="/"  component={Home}/>  
-          <Route  path="//Projects" component={Projects} />
+          <Route  path="/"  component={Home}/>  
+          <Route  path="/Projects" component={Projects} />
         </Switch>
         </HashRouter>
       

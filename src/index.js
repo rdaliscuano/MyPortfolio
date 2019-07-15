@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {HashRouter as Router, Route} from 'react-router-dom';
 import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-
+import {HashRouter, Route} from 'react-router-dom';
 
 ReactDOM.render(
-<Router>
-    <Route component={App}/>
-</Router>
-,document.getElementById('root'));
+<HashRouter>
+<Route path="/" component={App} />
+</HashRouter>, document.getElementById('root')
+);
 
-
+serviceWorker.unregister();
