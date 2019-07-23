@@ -14,7 +14,6 @@ class App extends Component {
   <Menu right> 
   <div className='nav-head'><i className="fab fa-codepen"></i>My Portfolio</div>
     <a id="home" className="menu-item" href="/MyPortfolio/">Home</a>
-    <a id="Projects" className="menu-item" href="/MyPortfolio/Projects">Projects</a>
     <a  id="Resume" className="menu-item"  href="/MyPortfolio/static/MYresume.pdf" target = "_blank">Resume</a>
     <div className='contact'>
       <a href='https://www.linkedin.com/in/roldan-aliscuano-592910180/' target = "_blank"><i className="fab fa-linkedin"></i></a>
